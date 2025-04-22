@@ -1,0 +1,54 @@
+.inicio-bg {
+  --background: #66f5f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.bunny-center {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-container {
+  width: 80%;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  top: 57%;
+}
+
+.nombre-input {
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+}
+
+.btn-continuar {
+  --background: #f276a3;
+  width: 60%;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #4a4a4a;
+}

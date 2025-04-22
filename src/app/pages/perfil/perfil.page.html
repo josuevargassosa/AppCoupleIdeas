@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true" class="perfil-bg">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="ion-text-center">Bienvenidos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-searchbar
+    placeholder="Buscar pregunta..."
+    [(ngModel)]="filtro"
+  ></ion-searchbar>
+
+  <ng-container>
+    <app-pregunta-card
+      *ngFor="let p of preguntasFiltradas()"
+      [pregunta]="p"
+      (eliminar)="eliminarPregunta($event)"
+    ></app-pregunta-card>
+  </ng-container>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="abrirModal()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

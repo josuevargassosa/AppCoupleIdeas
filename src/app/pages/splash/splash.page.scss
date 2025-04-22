@@ -1,0 +1,51 @@
+.splash-background {
+  --background: #6cf5f2;
+}
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  //padding: 2rem;
+}
+
+.splash-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.pink {
+  color: #f144aa;
+}
+
+.blue {
+  color: #1c4ff1;
+}
+
+.heart-icon {
+  color: red;
+  font-size: 32px;
+  margin: 0 5px;
+}
+
+.bunny {
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/bunny.png"); /* Cambia si usas otra imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-bunny {
+  align-self: flex-start;
+}
+
+.right-bunny {
+  align-self: flex-end;
+  transform: scaleX(-1);
+}

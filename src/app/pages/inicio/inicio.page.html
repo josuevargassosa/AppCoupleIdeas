@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true" class="inicio-bg">
+  <div class="container">
+    <img src="assets/bunnyAll.png" class="bunny-center" />
+
+    <ion-item lines="none" class="input-container">
+      <ion-input
+        placeholder="Ingresa tu nombre"
+        [(ngModel)]="nombre"
+        class="nombre-input"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="btn-continuar" (click)="continuar()">
+      Continuar
+    </ion-button>
+
+    <p class="footer">CoupleToDo © 2025</p>
+  </div>
+</ion-content>
